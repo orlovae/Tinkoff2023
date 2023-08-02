@@ -25,7 +25,7 @@
 100  10  12  1
 100
  */
-class Task01 {
+class Task01Solution {
     private val inputString = readln()
         .split(" ")
         .filter { it.isNotEmpty() }
