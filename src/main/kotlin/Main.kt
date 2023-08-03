@@ -1,3 +1,3 @@
-fun main(args: Array<String>) {
-    val task = Task03()
+fun main(args: Array<String>?) {
+    val task = Task04()
 }
