@@ -59,16 +59,17 @@ class Task03 {
 
 
     init {
-        val modifiedList = levelList.toMutableList()
-        modifiedList.removeAt(peopleLeave)
+        val modifiedList = levelList
+            .toMutableList()
+            .slice(0..peopleLeave)
 
-        if (minutesLeave > levelList[peopleLeave]) {
+        if (minutesLeave >= levelList[peopleLeave]) {
             println(
-                levelList.last() - 1
+                levelList.last() - levelList.first()
             )
         } else {
             println(
-                modifiedList.last() - 2 + levelList[peopleLeave]
+                levelList.last() - levelList.first() + modifiedList.last() - modifiedList.first()
             )
         }
     }
