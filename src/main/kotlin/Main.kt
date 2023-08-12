@@ -1,3 +1,3 @@
 fun main() {
-Task09()
+Task10()
 }
